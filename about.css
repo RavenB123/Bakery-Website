@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    background-color: #FAF8F4;
+    font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Cormorant Garamond", serif;
+}
+
+#site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8%;
+    background-color: #FAF8F4;
+}
+
+.header-logo,
+.header-btn {
+    flex: 1;
+}
+
+.site-navigation {
+    flex: 2;
+}
+
+.header-btn {
+    text-align: right;
+}
+
+#site-header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#site-header nav a {
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D2926;
+}
+
+#site-header nav a:hover {
+    color: #C9A26A;
+}
+
+.header-btn a {
+    background-color: #2D2926;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.header-btn a:hover {
+    background-color: #4A433E;
+}
+
+.header-logo h2 {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 600;
+    color: #2D2926;
+}
+
+.header-logo p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #C9A26A;
+}
+
+.hero-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("images/bakery-table.png");
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 68px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.hero-text a {
+    background-color: #C9A26A;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    display: inline-block;
+}
+
+.hero-text a:hover {
+    background-color: #B28A5C;
+}
+
+.about-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("images/berry-cake.png");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 110px 10%;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 60px;
+    color: #2D2926;
+    margin: 0 0 35px;
+    line-height: 1.1;
+}
+
+.about-paragraph {
+    font-size: 18px;
+    line-height: 34px;
+    color: #5F5A55;
+    margin-bottom: 25px;
+}
+
+.section-label {
+    color: #C9A26A;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.owner-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 100px 10%;
+}
+
+.owner-image {
+    width: 35%;
+    text-align: center;
+}
+
+.owner-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+}
+
+.owner-content {
+    width: 65%;
+}
+
+.owner-content h2 {
+    font-size: 48px;
+    color: #2D2926;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.owner-content p {
+    color: #5F5A55;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.parallax {
+    background-image: url("images/bread.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+/* Sliding text 
+   I added this animation because the original Transylvanian Traditions website
+   uses a scroll feature. Although we did not build this effect in class, I wanted
+   to recreate a feature from the original site while keeping the code simple
+   using only HTML and CSS.
+*/
+
+.sliding-text {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 50px 0;
+    background-color: #FAF8F4;
+}
+
+.slide-track {
+    display: inline-block;
+    animation: slide 20s linear infinite;
+}
+
+.slide-track h2 {
+    font-size: 60px;
+    margin: 0;
+    color: #2D2926;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+footer {
+    background-color: #a89282;
+    padding: 60px 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 22%;
+}
+
+.footer-column h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    color: white;
+    line-height: 28px;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #C9A26A;
+}
+
+@media (max-width: 768px) {
+
+    #site-header {
+        flex-direction: column;
+    }
+
+    .site-navigation ul {
+        flex-direction: column;
+    }
+
+    .about-section h2 {
+        font-size: 44px;
+    }
+
+    .owner-section {
+        flex-direction: column;
+    }
+
+    .owner-image,
+    .owner-content {
+        width: 100%;
+    }
+
+    .owner-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,264 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Cormorant Garamond", serif;
+}
+
+body {
+    margin: 0;
+    background-color: #FAF8F4;
+    font-family: "Inter", sans-serif;
+}
+
+#site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8%;
+    background-color: #FAF8F4;
+}
+
+.header-logo,
+.header-btn {
+    flex: 1;
+}
+
+.site-navigation {
+    flex: 2;
+}
+
+.header-btn {
+    text-align: right;
+}
+
+.header-logo h2 {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 600;
+    color: #2D2926;
+}
+
+.header-logo p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #C9A26A;
+}
+
+#site-header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#site-header nav a {
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D2926;
+}
+
+#site-header nav a:hover {
+    color: #C9A26A;
+}
+
+.header-btn a {
+    background-color: #2D2926;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.header-btn a:hover {
+    background-color: #4A433E;
+}
+
+.pastries-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("images/pastries.png");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    text-align: center;
+}
+
+.banner-text h1 {
+    color: white;
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    color: white;
+    font-size: 18px;
+}
+
+.chimney-section,
+.birthday-section,
+.macaron-section {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.chimney-section h2,
+.birthday-section h2,
+.macaron-section h2 {
+    font-size: 52px;
+    color: #2D2926;
+    margin-bottom: 20px;
+}
+
+.chimney-section p,
+.birthday-section p,
+.macaron-section p {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 30px;
+    color: #5F5A55;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.product-item {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    margin: 20px 0 10px;
+    font-size: 28px;
+    color: #2D2926;
+}
+
+.product-item p {
+    margin: 0;
+    line-height: 26px;
+    color: #5F5A55;
+}
+
+
+.divider {
+    width: 120px;
+    height: 2px;
+    background-color: #C9A26A;
+    margin: 40px auto;
+}
+
+.macaron-section img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.macaron-section a {
+    display: inline-block;
+    background-color: #2D2926;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    margin-top: 20px;
+}
+
+.macaron-section a:hover {
+    background-color: #4A433E;
+}
+
+footer {
+    background-color: #a89282;
+    padding: 60px 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 22%;
+}
+
+.footer-column h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    color: white;
+    line-height: 28px;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #C9A26A;
+}
+
+@media (max-width: 768px) {
+
+    #site-header {
+        flex-direction: column;
+    }
+
+    .site-navigation ul {
+        flex-direction: column;
+    }
+
+    .product-grid {
+        flex-direction: column;
+    }
+
+    .product-item {
+        width: 100%;
+    }
+
+    .banner-text h1 {
+        font-size: 48px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+}

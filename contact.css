@@ -1,0 +1,337 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Cormorant Garamond", serif;
+}
+
+body {
+    margin: 0;
+    background-color: #FAF8F4;
+    font-family: "Inter", sans-serif;
+}
+
+#site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8%;
+    background-color: #FAF8F4;
+}
+
+.header-logo,
+.header-btn {
+    flex: 1;
+}
+
+.site-navigation {
+    flex: 2;
+}
+
+.header-btn {
+    text-align: right;
+}
+
+.header-logo h2 {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 600;
+    color: #2D2926;
+}
+
+.header-logo p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #C9A26A;
+}
+
+#site-header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#site-header nav a {
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D2926;
+}
+
+#site-header nav a:hover {
+    color: #C9A26A;
+}
+
+.header-btn a {
+    background-color: #2D2926;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.header-btn a:hover {
+    background-color: #4A433E;
+}
+
+.contact-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url("images/bakery-table.png");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    text-align: center;
+}
+
+.banner-text h1 {
+    color: white;
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    color: white;
+    font-size: 18px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 10%;
+    text-align: center;
+    gap: 30px;
+}
+
+.info-box {
+    width: 25%;
+    background: white;
+    padding: 35px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.info-box h2 {
+    font-size: 34px;
+    color: #2D2926;
+    margin-bottom: 15px;
+}
+
+.info-box p {
+    line-height: 28px;
+    color: #5F5A55;
+}
+
+.icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.map-section {
+    padding: 0 10% 100px;
+}
+
+.map-section h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.map-section iframe {
+    width: 100%;
+    border: none;
+}
+
+.contact-form {
+    width: 65%;
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.form-intro {
+    color: #5F5A55;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2D2926;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #C9A26A;
+    background: transparent;
+    padding: 12px 0;
+    margin-bottom: 28px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #2D2926;
+}
+
+.contact-form button {
+    background: #2D2926;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.contact-form button:hover {
+    background: #C9A26A;
+}
+
+.contact-bottom {
+    display: flex;
+    gap: 80px;
+    padding: 100px 10%;
+    align-items: flex-start;
+}
+
+.holiday-hours {
+    width: 35%;
+    background: white;
+    padding: 35px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.holiday-hours h2 {
+    text-align: center;
+    font-size: 48px;
+    margin: 0 0 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #2D2926;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #D8D2CB;
+}
+
+tr:nth-child(even) {
+    background-color: #F4F1EC;
+}
+
+footer {
+    background-color: #a89282;
+    padding: 60px 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 22%;
+}
+
+.footer-column h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    color: white;
+    line-height: 28px;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #C9A26A;
+}
+
+@media (max-width: 768px) {
+
+    #site-header {
+        flex-direction: column;
+    }
+
+    .site-navigation ul {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+
+    .contact-bottom {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .holiday-hours {
+        width: 100%;
+    }
+
+    .banner-text h1 {
+        font-size: 48px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+}
